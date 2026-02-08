@@ -8,7 +8,8 @@ namespace AsyncMasterClass
     // ============================================================
     //
     // Kısa özet (Türkçe açıklamalar script içinde):
-    // - async void normal metotlarda KESİNLİKLE kaçınılmalıdır.
+    //   * async void normal metotlarda KESİNLİKLE kaçınılmalıdır.
+    //   * Await edilemez 
     //   * Exception'lar çağırana dönmez; genellikle AppDomain / process seviyesinde
     //     "unhandled exception" olarak değerlendirilir.
     //   * Çağıran metot metotun tamamlandığını bilemez (tamamlanma takibi yok).

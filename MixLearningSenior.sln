@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "async&void", "async&void\as
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWhereGroupBy", "LinqWhereGroupBy\LinqWhereGroupBy.csproj", "{D52EE58F-A9A4-41EB-82CD-A3D91DC35488}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareAndRequestPipeline", "MiddlewareAndRequestPipeline\MiddlewareAndRequestPipeline.csproj", "{1441E699-DBDC-402C-86E4-EE0DABB1537F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D52EE58F-A9A4-41EB-82CD-A3D91DC35488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52EE58F-A9A4-41EB-82CD-A3D91DC35488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D52EE58F-A9A4-41EB-82CD-A3D91DC35488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
