@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWhereGroupBy", "LinqWhe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareAndRequestPipeline", "MiddlewareAndRequestPipeline\MiddlewareAndRequestPipeline.csproj", "{1441E699-DBDC-402C-86E4-EE0DABB1537F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstAndDatabaseFirst", "CodeFirstAndDatabaseFirst\CodeFirstAndDatabaseFirst.csproj", "{0F0BE3F1-C677-4F66-839E-FA57DE7F4229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{64183426-10D0-459D-9AD3-4A3690F30B42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1441E699-DBDC-402C-86E4-EE0DABB1537F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0BE3F1-C677-4F66-839E-FA57DE7F4229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0BE3F1-C677-4F66-839E-FA57DE7F4229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0BE3F1-C677-4F66-839E-FA57DE7F4229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0BE3F1-C677-4F66-839E-FA57DE7F4229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64183426-10D0-459D-9AD3-4A3690F30B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64183426-10D0-459D-9AD3-4A3690F30B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64183426-10D0-459D-9AD3-4A3690F30B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64183426-10D0-459D-9AD3-4A3690F30B42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
