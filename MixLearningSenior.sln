@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SealedvsStatic", "SealedvsS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{8BFD1447-282B-4456-B9DA-C3ED50628519}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTFul&HttpMethods", "RESTFul\RESTFul&HttpMethods.csproj", "{633DF975-588D-4656-8EDF-E8DF0D1FE5E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{8BFD1447-282B-4456-B9DA-C3ED50628519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFD1447-282B-4456-B9DA-C3ED50628519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFD1447-282B-4456-B9DA-C3ED50628519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633DF975-588D-4656-8EDF-E8DF0D1FE5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633DF975-588D-4656-8EDF-E8DF0D1FE5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633DF975-588D-4656-8EDF-E8DF0D1FE5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633DF975-588D-4656-8EDF-E8DF0D1FE5E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
