@@ -25,19 +25,16 @@ class BankManager
     public static void RiskyTransfer(Account from, Account to, decimal amount)
     {
          
-        lock (from.lockObject)///Barış para yollamak istiyor hesabınıı kitledi
+        lock (from.lockObject)//fatih barış
         {
-            Console.WriteLine($"Thread {from.Id} kilitlendi, {to.Id} bekleniyor...");
-            // Deadlock ihtimalini artırmak için yapay bekleme
-            if (from.Id == 1) { Console.WriteLine("Fatih girdi"); }
-            if (from.Id == 2) { Console.WriteLine("Bariş girdi"); }
-            if (from.Id == 1) { Console.WriteLine("Fatih  barış lockobject kısmına girmek istiyor fakat barış kitledi giremiyor"); }
-            if (from.Id == 2) { Console.WriteLine("Bariş fatih lockobjectine girmek istedi farat fatih kitledi giremiyor"); }
+            
+            if (from.Id == 1) { Console.WriteLine("Barış  nesnesi kitlendi"); }
+            if (from.Id == 2) { Console.WriteLine("Fatih nesnesi kitlendi"); }
             lock (to.lockObject) // Karşı taraf da beni bekliyorsa kilitlendik!
             {
                 Console.WriteLine("buraya girdi");
-                if (to.Id == 1) { Console.WriteLine("Fatih 2. ye girdi"); }
-                if (to.Id == 2) { Console.WriteLine("Bariş 2. ye girdi"); }
+                if (from.Id == 1) { Console.WriteLine("Barış  nesnesi kitlendi"); }
+                if (from.Id == 2) { Console.WriteLine("Fatih nesnesi kitlendi"); }
                 from.Balance -= amount;
                 to.Balance += amount;
                 Console.WriteLine("Transfer bitti.");
@@ -54,17 +51,17 @@ class BankManager
         Account first = from.Id < to.Id ? from : to;
         Account second = from.Id < to.Id ? to : from;
 
-        lock (first.lockObject)
+        lock (first.lockObject)//bariş
         {
             Console.WriteLine($"Thread  {first.Id} kilitlendi (Sıralı).");
-            if (from.Id == 1) { Console.WriteLine("Fatih girdi"); }
-            if (from.Id == 2) { Console.WriteLine("Bariş girdi"); }
+            if (first.Id == 1) { Console.WriteLine("Barış  nesnesi kitlendi"); }
+            if (first.Id == 2) { Console.WriteLine("Fatih nesnesi kitlendi"); }
 
-            lock (second.lockObject)
+            lock (second.lockObject)//fatih
             {
                 Console.WriteLine("buraya girdi safe");
-                if (to.Id == 1) { Console.WriteLine("Fatih 2. ye girdi"); }
-                if (to.Id == 2) { Console.WriteLine("Bariş 2. ye girdi"); }
+                if (second.Id == 1) { Console.WriteLine("Barış  nesnesi kitlendi"); }
+                if (second.Id == 2) { Console.WriteLine("Fatih nesnesi kitlendi"); }
                 from.Balance -= amount;
                 to.Balance += amount;
                 Console.WriteLine($"Thread: Başarıyla transfer edildi.");
@@ -77,12 +74,12 @@ class BankManager
       
         Task t1 = Task.Run(() =>
         {
-            RiskyTransfer(baris, fatih, 500);//önce bariş kendi nesnesine sonra fatih kendi nesnesine
+            SafeTransfer(baris, fatih, 500);//önce bariş kendi nesnesine sonra fatih kendi nesnesine
 
         });
         Task t2 = Task.Run(() =>
         {
-            RiskyTransfer(fatih, baris, 200);//önce fatih kendi nesnesine sonra bariş kendi nesnesine
+            SafeTransfer(fatih, baris, 200);//önce fatih kendi nesnesine sonra bariş kendi nesnesine
 
 
         });
