@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record", "Record\Record.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexVsRange", "IndexVsRange\IndexVsRange.csproj", "{0BEE8752-7D96-484A-AA5E-73CE99011CE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkTransaction", "EntityFrameworkTransaction\EntityFrameworkTransaction.csproj", "{916670C6-8CAA-4BC1-A26E-6D50992F7BA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{0BEE8752-7D96-484A-AA5E-73CE99011CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BEE8752-7D96-484A-AA5E-73CE99011CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BEE8752-7D96-484A-AA5E-73CE99011CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{916670C6-8CAA-4BC1-A26E-6D50992F7BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916670C6-8CAA-4BC1-A26E-6D50992F7BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916670C6-8CAA-4BC1-A26E-6D50992F7BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916670C6-8CAA-4BC1-A26E-6D50992F7BA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
